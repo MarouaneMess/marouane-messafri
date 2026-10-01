@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "../styles/base.css";
+@import "../styles/navigation.css";
+@import "../styles/hero.css";
+@import "../styles/projects.css";
+@import "../styles/sections.css";
+@import "../styles/pages.css";
+@import "../styles/reading.css";
+@import "../styles/wide.css";
+@import "../styles/laptop.css";
+@import "../styles/tablet.css";
+@import "../styles/mobile.css";
+@import "../styles/motion.css";
+@import "../styles/admin.css";
+@import "../styles/admin-editor.css";
+@import "../styles/admin-responsive.css";
+@import "../styles/experience.css";
+@import "../styles/core-3d.css";
+@import "../styles/method.css";
+@import "../styles/experience-responsive.css";
+@import "../styles/project-visual.css";
+@import "../styles/selected-work.css";
+@import "../styles/expertise.css";
+@import "../styles/command-menu.css";
+@import "../styles/case-study.css";
+@theme {
+  --color-accent: #78e7d2;
+  --color-surface: #111719;
+}

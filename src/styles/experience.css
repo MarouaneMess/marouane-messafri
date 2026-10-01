@@ -1,0 +1,128 @@
+body {
+  font-family: "Manrope Variable", Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+.hero-intro,
+.footer-name,
+.brand,
+.admin-brand {
+  font-family: "Space Grotesk Variable", Arial, sans-serif;
+}
+.hero {
+  grid-template-columns: 1fr 1.08fr;
+  min-height: 760px;
+  padding-top: 65px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 850px;
+  max-width: 100%;
+  height: 750px;
+  background: radial-gradient(ellipse, #4dbd9f09, transparent 65%);
+  top: -40px;
+  right: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+.hero h1 {
+  font-size: clamp(64px, 6.1vw, 85px);
+  font-weight: 500;
+  letter-spacing: -5px;
+  line-height: 1.06;
+}
+.hero h1 > span {
+  background: linear-gradient(105deg, #a6f1d5, #6ee1cb 55%, #73c3e7);
+  color: transparent;
+  background-clip: text;
+}
+.hero-intro {
+  font-size: 19px;
+  margin-bottom: 19px;
+}
+.hero-role {
+  font-size: 12px;
+  line-height: 1.8;
+  max-width: 400px;
+}
+.hero-description {
+  font-size: 13px;
+  max-width: 390px;
+}
+.hero-actions .button {
+  min-height: 49px;
+}
+.desktop-nav a {
+  font-size: 12px;
+}
+.hero-edition span,
+.eyebrow > span,
+.project-meta > span:last-child {
+  color: #8b9e98;
+}
+.section-heading h2 {
+  font-size: 37px;
+  letter-spacing: -1.7px;
+}
+.section-heading p,
+.about-strip p,
+.contact-cta p {
+  font-size: 13px;
+}
+.project-card {
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: auto;
+}
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    450px circle at var(--spot-x, 50%) var(--spot-y, 0%),
+    #b4ffe914,
+    transparent 55%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.project-card:hover::after {
+  opacity: 1;
+}
+.project-artwork {
+  height: 235px;
+}
+.artwork-shape {
+  transition: transform 0.5s;
+}
+.project-card:hover .artwork-shape {
+  transform: scale(1.055);
+}
+.project-card p,
+.research-feature p,
+.service-card p,
+.post-card p {
+  font-size: 13px;
+  line-height: 1.85;
+}
+.project-card h3 {
+  font-size: 23px;
+}
+.project-meta {
+  font-size: 9px;
+}
+.tags > span {
+  font-size: 9px;
+}
+.skills-list span {
+  font-size: 12px;
+}
+.service-card h3 {
+  font-size: 21px;
+}
+.post-card h3 {
+  font-size: 26px;
+}

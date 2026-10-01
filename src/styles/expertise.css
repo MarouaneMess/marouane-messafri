@@ -1,0 +1,192 @@
+.expertise-explorer {
+  border: 1px solid #ffffff16;
+  border-radius: 12px;
+  background: #101719;
+  overflow: hidden;
+}
+.expertise-tabs {
+  display: flex;
+  border-bottom: 1px solid #ffffff16;
+  overflow-x: auto;
+  padding: 0 20px;
+  scrollbar-width: thin;
+}
+.expertise-tabs > button {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 23px 18px;
+  font-size: 12px;
+  color: #a4b0b5;
+  transition:
+    color 0.2s,
+    background 0.2s;
+}
+.expertise-tabs > button[aria-selected="true"] {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  background: linear-gradient(0deg, #78e7d20a, transparent);
+}
+.expertise-tabs > button:hover {
+  color: var(--text);
+}
+.expertise-tabs > button:focus-visible {
+  outline-offset: -6px;
+}
+.expertise-panel {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  min-height: 370px;
+}
+.expertise-panel:focus-visible {
+  outline-offset: -6px;
+}
+.expertise-copy {
+  padding: 45px;
+}
+.expertise-copy h3 {
+  font-size: 32px;
+  letter-spacing: -1.2px;
+  margin-bottom: 18px;
+  max-width: 400px;
+}
+.expertise-copy > p {
+  font-size: 13px;
+  line-height: 1.9;
+  max-width: 440px;
+}
+.expertise-copy > .eyebrow {
+  font-size: 8px;
+}
+.expertise-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 25px 0;
+}
+.expertise-skills > span {
+  padding: 5px 10px;
+  border: 1px solid #ffffff18;
+  border-radius: 5px;
+  color: #c5d4d0;
+  font: 10px/1.7 var(--mono);
+}
+.expertise-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  overflow: hidden;
+  background: radial-gradient(ellipse, #78e7d209, transparent 65%);
+  border-left: 1px solid #ffffff0a;
+}
+.expertise-rings {
+  width: 240px;
+  height: 240px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.expertise-rings > span {
+  position: absolute;
+  inset: 0;
+  border: 1px solid #78e7d21f;
+  border-radius: 50%;
+}
+.expertise-rings > span:nth-child(2) {
+  inset: 25px;
+  border-style: dashed;
+  transform: rotate(-25deg);
+}
+.expertise-rings > span:first-child::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  position: absolute;
+  top: 29px;
+  right: 34px;
+  box-shadow: 0 0 14px #78e7d240;
+}
+.expertise-symbol {
+  width: 126px;
+  height: 126px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-direction: column;
+  border: 1px solid #78e7d238;
+  border-radius: 25px;
+  background: linear-gradient(140deg, #1d3730, #11211e);
+  box-shadow:
+    0 14px 0 -5px #0d1816,
+    0 14px 0 -4px #78e7d229;
+  transform: rotate(-7deg);
+  color: var(--accent);
+}
+.expertise-symbol strong {
+  font: 9px var(--mono);
+  letter-spacing: 2px;
+}
+.expertise-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+.expertise-keywords > span {
+  font: 8px var(--mono);
+  color: #aec2ba;
+}
+.expertise-keywords > span + span::before {
+  content: "/";
+  color: #8a9b93;
+  margin-right: 8px;
+}
+@media (max-width: 850px) {
+  .expertise-tabs {
+    padding: 0 5px;
+  }
+  .expertise-tabs > button {
+    padding: 20px 12px;
+    font-size: 11px;
+  }
+  .expertise-copy {
+    padding: 30px;
+  }
+  .expertise-copy h3 {
+    font-size: 28px;
+  }
+  .expertise-rings {
+    width: 205px;
+    height: 205px;
+  }
+}
+@media (max-width: 640px) {
+  .expertise-tabs > button {
+    padding: 18px 13px;
+  }
+  .expertise-panel {
+    grid-template-columns: 1fr;
+    min-height: 430px;
+  }
+  .expertise-copy {
+    padding: 28px;
+  }
+  .expertise-copy h3 {
+    font-size: 29px;
+  }
+  .expertise-diagram {
+    display: none;
+  }
+}

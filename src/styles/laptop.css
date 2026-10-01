@@ -1,0 +1,77 @@
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 30px;
+  }
+  .desktop-nav {
+    gap: 18px;
+  }
+  .nav-inner {
+    gap: 20px;
+  }
+  .hero h1 {
+    font-size: 65px;
+  }
+  .hero-role {
+    font-size: 10px;
+  }
+  .hero {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 5px;
+  }
+  .arch-node {
+    min-width: 142px;
+    padding: 13px;
+  }
+  .arch-node strong {
+    font-size: 19px;
+  }
+  .arch-node small {
+    font-size: 5px;
+  }
+  .architecture {
+    height: 390px;
+  }
+  .credibility > div {
+    padding: 4px 16px;
+    grid-template-columns: 25px 1fr;
+  }
+  .credibility strong {
+    font-size: 15px;
+  }
+  .credibility span {
+    font-size: 9px;
+  }
+  .project-grid {
+    gap: 15px;
+  }
+  .project-card-body {
+    padding: 20px 17px 16px;
+  }
+  .project-artwork {
+    height: 190px;
+  }
+  .artwork-shape span {
+    font-size: 25px;
+  }
+  .artwork-shape svg {
+    width: 40px;
+  }
+  .research-feature {
+    grid-template-columns: 110px 1fr 110px;
+    gap: 25px;
+    padding: 25px;
+  }
+  .skills-grid {
+    gap: 18px;
+  }
+  .contact-grid {
+    gap: 35px;
+  }
+  .article-layout {
+    gap: 35px;
+    grid-template-columns: minmax(0, 1fr) 190px;
+  }
+  .detail-grid {
+    gap: 50px;
+  }
+}

@@ -1,0 +1,160 @@
+@media (max-width: 850px) {
+  .desktop-nav {
+    gap: 14px;
+  }
+  .desktop-nav a {
+    font-size: 10px;
+  }
+  .brand > span:last-child {
+    display: none;
+  }
+  .hero {
+    min-height: 620px;
+    padding-top: 55px;
+  }
+  .hero h1 {
+    font-size: 55px;
+    letter-spacing: -3px;
+  }
+  .hero-actions .button {
+    font-size: 10px;
+    padding: 11px 13px;
+    gap: 8px;
+  }
+  .architecture {
+    height: 360px;
+  }
+  .arch-node {
+    min-width: 125px;
+    gap: 8px;
+    padding: 11px;
+  }
+  .arch-node small {
+    letter-spacing: 0.7px;
+  }
+  .arch-node strong {
+    font-size: 18px;
+  }
+  .arch-node > svg {
+    width: 18px;
+  }
+  .node-build {
+    left: 27%;
+  }
+  .orbit-two {
+    width: 280px;
+    height: 280px;
+  }
+  .orbit-one {
+    width: 200px;
+    height: 200px;
+  }
+  .arch-core {
+    width: 65px;
+    height: 70px;
+  }
+  .arch-core svg {
+    width: 30px;
+  }
+  .credibility {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 0;
+  }
+  .credibility > div:nth-child(2) {
+    border: 0;
+  }
+  .credibility > div:nth-child(3) {
+    padding-left: 0;
+  }
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .project-grid > .project-card:last-child:nth-child(3) {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .project-grid > .project-card:last-child:nth-child(3) .project-artwork {
+    height: 100%;
+  }
+  .section-heading h2 {
+    font-size: 28px;
+  }
+  .section-heading .text-link {
+    font-size: 10px;
+  }
+  .research-feature {
+    grid-template-columns: 1fr 100px;
+  }
+  .research-symbol {
+    display: none;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px;
+  }
+  .about-strip {
+    gap: 25px;
+    grid-template-columns: 1fr 3fr;
+  }
+  .about-strip h2 {
+    font-size: 22px;
+  }
+  .services-grid {
+    gap: 15px;
+  }
+  .service-card {
+    padding: 20px;
+  }
+  .service-card h3 {
+    font-size: 17px;
+  }
+  .contact-cta h2 {
+    font-size: 35px;
+  }
+  .about-grid {
+    gap: 35px;
+  }
+  .quote-card {
+    padding: 25px;
+  }
+  .quote-card blockquote {
+    font-size: 22px;
+  }
+  .page-heading h1 {
+    font-size: 49px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-details {
+    max-width: 520px;
+  }
+  .contact-form {
+    max-width: 720px;
+  }
+  .research-pillars {
+    gap: 10px;
+  }
+  .research-pillars > div {
+    padding: 20px 10px;
+  }
+  .article-layout {
+    grid-template-columns: 1fr;
+  }
+  .article-aside {
+    position: static;
+    grid-row: 1;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+  }
+  .article-aside ol {
+    display: flex;
+    gap: 15px 30px;
+    flex-wrap: wrap;
+  }
+  .detail-grid {
+    grid-template-columns: 1fr 190px;
+    gap: 35px;
+  }
+}

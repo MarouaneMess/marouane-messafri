@@ -1,0 +1,14 @@
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+  .hero {
+    min-height: 760px;
+  }
+  .hero h1 {
+    font-size: 88px;
+  }
+  .architecture {
+    height: 470px;
+  }
+}

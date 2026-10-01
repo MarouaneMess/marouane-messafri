@@ -1,0 +1,156 @@
+generator client {
+  provider = "prisma-client"
+  output = "../src/generated/prisma"
+}
+datasource db {
+  provider = "postgresql"
+}
+enum Role {
+  ADMIN
+  EDITOR
+}
+enum Status {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+enum PostType {
+  BLOG
+  WRITEUP
+  ARTICLE
+}
+model User {
+  id String @id @default(cuid())
+  githubId String @unique
+  name String
+  email String?
+  role Role @default(ADMIN)
+  posts Post[]
+  logs AuditLog[]
+  createdAt DateTime @default(now())
+}
+model Post {
+  id String @id @default(cuid())
+  sourceSlug String? @unique
+  title String
+  slug String @unique
+  excerpt String
+  content String
+  type PostType @default(BLOG)
+  status Status @default(DRAFT)
+  coverImage String @default("")
+  publishedAt DateTime?
+  authorId String?
+  author User? @relation(fields: [authorId], references: [id])
+  categoryId String?
+  category Category? @relation(fields: [categoryId], references: [id])
+  tags Tag[]
+  version Int @default(1)
+  deletedAt DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  @@index([status, deletedAt, publishedAt])
+}
+model Project {
+  id String @id @default(cuid())
+  title String
+  slug String @unique
+  description String
+  content String @default("")
+  repoName String @default("")
+  githubUrl String @default("")
+  demoUrl String @default("")
+  coverImage String @default("")
+  category String @default("Development")
+  technologies String[]
+  screenshots String[]
+  role String @default("")
+  problem String @default("")
+  solution String @default("")
+  architecture String @default("")
+  challenges String @default("")
+  lessons String @default("")
+  results String @default("")
+  featured Boolean @default(false)
+  hidden Boolean @default(false)
+  sortOrder Int @default(0)
+  status Status @default(DRAFT)
+  version Int @default(1)
+  deletedAt DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  @@index([status, hidden, deletedAt])
+}
+model SecurityResearch {
+  id String @id @default(cuid())
+  title String
+  slug String @unique
+  type String @default("CVE")
+  cveId String @default("")
+  product String @default("")
+  affectedVersions String @default("")
+  vulnerabilityType String @default("")
+  severity String @default("Medium")
+  cvss Float?
+  cvssV3 Float?
+  description String
+  content String @default("")
+  disclosurePlatform String @default("")
+  resolution String @default("")
+  timeline Json @default("[]")
+  references Json @default("[]")
+  status Status @default(DRAFT)
+  publishedAt DateTime?
+  version Int @default(1)
+  deletedAt DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  @@index([status, deletedAt])
+}
+model Category {
+  id String @id @default(cuid())
+  name String @unique
+  slug String @unique
+  posts Post[]
+}
+model Tag {
+  id String @id @default(cuid())
+  name String @unique
+  slug String @unique
+  posts Post[]
+}
+model Media {
+  id String @id @default(uuid())
+  name String
+  mimeType String
+  size Int
+  width Int
+  height Int
+  data Bytes
+  createdAt DateTime @default(now())
+}
+model SiteSettings {
+  id String @id @default("site")
+  heroMessage String @default("")
+  availability Boolean @default(true)
+  contactEmail String @default("")
+  github String @default("")
+  linkedin String @default("")
+  updatedAt DateTime @updatedAt
+}
+model AuditLog {
+  id String @id @default(cuid())
+  action String
+  entityType String
+  entityId String
+  userId String
+  user User @relation(fields: [userId], references: [id])
+  createdAt DateTime @default(now())
+  @@index([createdAt])
+}
+model RateLimit {
+  key String @id
+  count Int @default(1)
+  expiresAt DateTime
+  @@index([expiresAt])
+}

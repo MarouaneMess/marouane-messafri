@@ -1,0 +1,280 @@
+@media (min-width: 1600px) {
+  .hero h1 {
+    font-size: 94px;
+  }
+  .core-stage {
+    height: 500px;
+  }
+}
+@media (max-width: 1100px) {
+  .hero h1 {
+    font-size: 71px;
+  }
+  .core-stage {
+    height: 430px;
+  }
+  .core-callout {
+    left: -5px;
+    min-width: 145px;
+    padding: 12px 15px;
+  }
+  .core-signature {
+    right: -2px;
+    bottom: 78px;
+    font-size: 6px;
+  }
+  .perspective-switch button {
+    padding: 9px 12px;
+    gap: 7px;
+    font-size: 12px;
+  }
+  .perspective-switch .mono {
+    display: none;
+  }
+  .hero-role {
+    font-size: 11px;
+  }
+  .desktop-nav {
+    gap: 18px;
+  }
+  .desktop-nav a {
+    font-size: 11px;
+  }
+  .method-card {
+    padding: 25px;
+  }
+  .method-card p {
+    font-size: 11px;
+  }
+  .method-intro h2 {
+    font-size: 43px;
+  }
+  .section-heading h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 850px) {
+  .hero {
+    min-height: 700px;
+  }
+  .hero h1 {
+    font-size: 60px;
+    letter-spacing: -3.5px;
+  }
+  .hero-intro {
+    font-size: 16px;
+  }
+  .hero-role {
+    font-size: 10px;
+  }
+  .hero-description {
+    font-size: 12px;
+  }
+  .hero-actions .button {
+    min-height: 43px;
+  }
+  .core-stage {
+    height: 360px;
+  }
+  .core-callout {
+    min-width: 128px;
+    left: 0;
+    bottom: 87px;
+    gap: 10px;
+    padding: 11px;
+  }
+  .core-callout strong {
+    font-size: 21px;
+  }
+  .core-callout small {
+    font-size: 5px;
+  }
+  .core-signature {
+    display: none;
+  }
+  .perspective-caption {
+    padding: 14px 2px 0;
+  }
+  .perspective-caption strong {
+    font-size: 11px;
+  }
+  .perspective-caption p {
+    font-size: 9px;
+  }
+  .desktop-nav {
+    gap: 13px;
+  }
+  .desktop-nav a {
+    font-size: 10px;
+  }
+  .method-intro {
+    gap: 10px 35px;
+  }
+  .method-card h3 {
+    font-size: 37px;
+  }
+  .method-card {
+    padding: 22px;
+  }
+  .method-number {
+    font-size: 6px;
+  }
+  .method-tags {
+    font-size: 6px;
+  }
+  .section-heading h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 640px) {
+  .hero {
+    min-height: auto;
+    padding-top: 42px;
+  }
+  .hero h1 {
+    font-size: clamp(48px, 15vw, 64px);
+    letter-spacing: -3.6px;
+  }
+  .hero-role {
+    font-size: 11px;
+  }
+  .hero-description {
+    font-size: 13px;
+  }
+  .hero-actions .button {
+    font-size: 11px;
+    padding: 12px 14px;
+  }
+  .interactive-core {
+    margin: 27px -5px 10px;
+  }
+  .core-stage {
+    height: 345px;
+  }
+  .core-canvas {
+    inset: -12px -10px;
+  }
+  .core-stage-top {
+    font-size: 6px;
+    top: 12px;
+  }
+  .core-callout {
+    left: 11px;
+    bottom: 55px;
+    min-width: 140px;
+  }
+  .core-callout small {
+    font-size: 6px;
+  }
+  .core-callout strong {
+    font-size: 23px;
+  }
+  .core-corner {
+    display: none;
+  }
+  .core-pause {
+    bottom: 21px;
+    right: 18px;
+  }
+  .perspective-switch button {
+    font-size: 12px;
+    padding: 9px 15px;
+  }
+  .perspective-caption {
+    min-height: 85px;
+    padding-top: 14px;
+  }
+  .perspective-caption strong {
+    font-size: 12px;
+  }
+  .perspective-caption p {
+    font-size: 10px;
+    max-width: 280px;
+  }
+  .method-section {
+    padding-top: 50px;
+  }
+  .method-intro {
+    display: block;
+  }
+  .method-intro h2 {
+    font-size: 40px;
+    margin-bottom: 23px;
+  }
+  .method-intro > p {
+    font-size: 12px;
+  }
+  .method-cards {
+    grid-template-columns: 1fr;
+  }
+  .method-card {
+    padding: 28px;
+    border-right: 0;
+    border-bottom: 1px solid #ffffff15;
+  }
+  .method-card:last-child {
+    border: 0;
+  }
+  .method-number {
+    margin-bottom: 20px;
+    font-size: 7px;
+  }
+  .method-icon {
+    position: absolute;
+    right: 28px;
+    top: 65px;
+    width: 38px;
+    height: 38px;
+  }
+  .method-card h3 {
+    font-size: 44px;
+    margin-bottom: 15px;
+  }
+  .method-card p {
+    font-size: 12px;
+  }
+  .method-tags {
+    font-size: 7px;
+    margin-top: 23px;
+  }
+  .section-heading h2 {
+    font-size: 31px;
+  }
+  .project-artwork {
+    height: 225px;
+  }
+  .project-card p,
+  .service-card p,
+  .post-card p {
+    font-size: 13px;
+  }
+  .project-card h3 {
+    font-size: 24px;
+  }
+  .hero::before {
+    width: 100%;
+    right: 0;
+    height: 900px;
+  }
+  .post-card h3 {
+    font-size: 24px;
+  }
+  .contact-cta h2 {
+    font-size: 37px;
+  }
+  .skills-list span {
+    font-size: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal-item {
+    opacity: 1;
+    transform: none;
+  }
+  .project-card {
+    transform: none !important;
+  }
+  .core-canvas {
+    cursor: default;
+  }
+}

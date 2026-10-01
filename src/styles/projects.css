@@ -1,0 +1,217 @@
+.section {
+  padding: 80px 0;
+}
+.section + .section {
+  border-top: 1px solid var(--border);
+}
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 34px;
+}
+.section-heading h2 {
+  font-size: 32px;
+  letter-spacing: -1.25px;
+  margin-bottom: 0;
+}
+.section-heading p {
+  font-size: 12px;
+  margin: 14px 0 0;
+}
+.section-heading .text-link {
+  padding-bottom: 3px;
+}
+.section-heading .eyebrow {
+  margin-bottom: 16px;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  overflow: hidden;
+  transition:
+    transform 0.25s,
+    border-color 0.25s;
+  min-width: 0;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #78e7d242;
+}
+.project-artwork {
+  height: 205px;
+  position: relative;
+  overflow: hidden;
+  background: #162724;
+}
+.project-artwork img {
+  object-fit: cover;
+}
+.project-artwork:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(#ffffff06 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff06 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(ellipse, #000, transparent 90%);
+}
+.project-artwork:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #ffffff09;
+  width: 180px;
+  height: 180px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-radius: 24px;
+  pointer-events: none;
+}
+.artwork-label {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+  font-size: 6px;
+  letter-spacing: 1.6px;
+  color: #9fc1b6;
+}
+.artwork-shape {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #a6e3cf;
+}
+.artwork-shape span {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  max-width: 65%;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+.artwork-bottom {
+  position: absolute;
+  bottom: 14px;
+  left: 20px;
+  right: 20px;
+  font-size: 6px;
+  letter-spacing: 1px;
+  color: #80a99b;
+  display: flex;
+  justify-content: space-between;
+}
+.artwork-blink {
+  background: #262038;
+}
+.artwork-blink .artwork-shape {
+  color: #cfc0ff;
+}
+.artwork-blink .artwork-label,
+.artwork-blink .artwork-bottom {
+  color: #9a8caf;
+}
+.artwork-portal {
+  background: #192934;
+}
+.artwork-portal .artwork-shape {
+  color: #afcede;
+}
+.artwork-bread {
+  background: #30281f;
+}
+.artwork-bread .artwork-shape {
+  color: #e5c698;
+}
+.artwork-other {
+  background: #1c252a;
+}
+.project-artwork.large {
+  height: 420px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+.large .artwork-shape span {
+  font-size: 60px;
+}
+.large .artwork-shape svg {
+  width: 80px;
+  height: 80px;
+}
+.project-card-body {
+  padding: 23px 23px 16px;
+}
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #8ba09a;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.project-meta > span:last-child {
+  color: #60716c;
+}
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  letter-spacing: -0.6px;
+}
+.project-card h3 a {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.project-card h3 svg {
+  width: 18px;
+  color: #9cacaa;
+}
+.project-card p {
+  font-size: 11px;
+  line-height: 1.85;
+  min-height: 61px;
+}
+.tags {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin: 14px 0;
+}
+.tags > span {
+  font-family: var(--mono);
+  font-size: 8px;
+  border: 1px solid #ffffff10;
+  padding: 3px 6px;
+  color: #b3c1bc;
+  border-radius: 3px;
+  background: #ffffff02;
+}
+.project-links {
+  display: flex;
+  gap: 13px;
+  font-size: 9px;
+  min-height: 20px;
+  color: #97b1a9;
+  margin-top: 18px;
+}
+.project-links > a,
+.project-links > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.project-links > span {
+  margin-left: auto;
+}

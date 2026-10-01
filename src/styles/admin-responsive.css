@@ -1,0 +1,219 @@
+@media (max-width: 1150px) {
+  .admin-sidebar {
+    width: 200px;
+    padding: 30px 12px;
+  }
+  .admin-main {
+    margin-left: 200px;
+    padding: 0 25px 50px;
+  }
+  .admin-sidebar nav a {
+    font-size: 11px;
+    gap: 9px;
+  }
+  .admin-stats {
+    gap: 10px;
+  }
+  .admin-stats > div {
+    padding: 20px 14px;
+  }
+  .editor-layout {
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 15px;
+  }
+  .editor-properties {
+    padding: 18px;
+  }
+  .editor-preview {
+    padding: 20px;
+  }
+  .editor-actions > .text-link {
+    margin-left: 0;
+  }
+  .admin-heading h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .admin-sidebar {
+    position: static;
+    width: 100%;
+    padding: 20px;
+  }
+  .admin-brand {
+    margin: 0 0 20px;
+    font-size: 22px;
+  }
+  .admin-brand small {
+    display: inline;
+    font-size: 7px;
+    margin-left: 15px;
+  }
+  .admin-sidebar-label {
+    display: none;
+  }
+  .admin-sidebar nav {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 6px;
+    padding-bottom: 7px;
+  }
+  .admin-sidebar nav a {
+    white-space: nowrap;
+    padding: 9px 12px;
+    font-size: 10px;
+  }
+  .admin-sidebar-bottom {
+    flex-direction: row;
+    border-top: 0;
+    padding: 15px 0 0;
+    gap: 25px;
+  }
+  .admin-main {
+    margin-left: 0;
+    padding: 0 25px 50px;
+  }
+  .admin-topbar {
+    height: 55px;
+    margin-bottom: 30px;
+  }
+  .editor-layout {
+    grid-template-columns: minmax(0, 1fr) 280px;
+  }
+  .admin-stats {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .media-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .login-card {
+    padding: 30px;
+  }
+  .login-card h1 {
+    font-size: 31px;
+  }
+  .admin-main {
+    padding: 0 20px 40px;
+  }
+  .admin-heading {
+    display: block;
+  }
+  .admin-heading h1 {
+    font-size: 30px;
+  }
+  .admin-heading > .button {
+    margin-top: 20px;
+  }
+  .admin-heading > .status-badge {
+    margin-top: 15px;
+  }
+  .admin-heading p {
+    font-size: 11px;
+  }
+  .admin-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .admin-stats > div:last-child {
+    grid-column: span 2;
+  }
+  .admin-stats strong {
+    font-size: 28px;
+  }
+  .admin-quick {
+    grid-template-columns: 1fr;
+  }
+  .admin-panel {
+    padding: 18px;
+  }
+  .admin-panel-title h2 {
+    font-size: 16px;
+  }
+  .admin-panel-title a {
+    font-size: 9px;
+  }
+  .admin-topbar {
+    font-size: 8px;
+  }
+  .admin-topbar .mono {
+    font-size: 6px;
+  }
+  .admin-filters {
+    margin-top: 15px;
+  }
+  .admin-filters select {
+    width: 50%;
+  }
+  .editor-layout {
+    grid-template-columns: 1fr;
+  }
+  .editor-properties {
+    grid-row: 1;
+  }
+  .editor-writing {
+    grid-row: 2;
+  }
+  .editor-actions {
+    gap: 7px;
+  }
+  .editor-actions .button {
+    font-size: 9px;
+    padding: 8px 10px;
+  }
+  .editor-actions > .text-link {
+    font-size: 9px;
+  }
+  .markdown-input {
+    min-height: 420px;
+    font-size: 11px;
+    padding: 18px;
+  }
+  .editor-preview {
+    min-height: 400px;
+  }
+  .editor-properties label {
+    font-size: 12px;
+  }
+  .editor-properties input,
+  .editor-properties textarea,
+  .editor-properties select {
+    font-size: 12px;
+  }
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+  .media-dropzone {
+    padding: 30px 15px;
+  }
+  .media-dropzone span {
+    font-size: 9px;
+  }
+  .taxonomy-layout {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .audit-list li {
+    font-size: 8px;
+    gap: 10px;
+  }
+  .audit-list .mono {
+    font-size: 8px;
+  }
+  .settings-form label {
+    font-size: 11px;
+  }
+  .admin-sidebar-bottom a,
+  .admin-logout {
+    font-size: 10px;
+  }
+  .admin-table td {
+    padding: 15px 10px;
+  }
+  .confirm-dialog {
+    padding: 25px;
+  }
+}
+.article-layout > article {
+  min-width: 0;
+}
