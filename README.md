@@ -1,4 +1,4 @@
-# Marouane Messafri — Portfolio & Content Studio
+# Marouane Messafri — Portfolio 
 
 Portfolio personnel et professionnel, en français, autour du développement full-stack et de la recherche en sécurité. L’interface publique et le back-office partagent la même base PostgreSQL. Les données GitHub enrichissent une sélection éditoriale de projets.
 
