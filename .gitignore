@@ -8,3 +8,7 @@ playwright-report/
 test-results/
 *.tsbuildinfo
 *.log
+
+.vercel
+.env*
+!.env.example
